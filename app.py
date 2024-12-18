@@ -86,7 +86,7 @@ st.markdown(
     </style>
     <div class="footer">
         <p>Built with ❤️ and a dash of creativity by <span style="font-weight:bold;">zen`</span></p>
-        <p>Feel free to view the <a href="https://github.com/zen-0wl/Speech-Recognition-avec-librosa">source code</a>!</p>
+        <p>Feel free to view the <a href="https://github.com/zen-0wl/Speech-Recognition">source code</a>!</p>
     </div>
     """, unsafe_allow_html=True
 )
