@@ -2,3 +2,4 @@ Streamlit
 joblib
 librosa
 numpy
+matplotlib
