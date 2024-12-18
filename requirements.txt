@@ -1,0 +1,4 @@
+Streamlit
+joblib
+librosa
+numpy
