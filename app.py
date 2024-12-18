@@ -53,16 +53,26 @@ if audio_file is not None:
             st.markdown('<h2 style="color: #DC143C;">😡 Angry</h2>', unsafe_allow_html=True)
         elif prediction[0] == 'neutral':
             st.markdown('<h2 style="color: #808080;">😐 Neutral</h2>', unsafe_allow_html=True)
+        elif prediction[0] == 'fearful':
+            st.markdown('<h2 style="color: #FF4500;">😨 Fearful</h2>', unsafe_allow_html=True)
+        elif prediction[0] == 'disgust':
+            st.markdown('<h2 style="color: #008000;">🤢 Disgust</h2>', unsafe_allow_html=True)
+        elif prediction[0] == 'calm':
+            st.markdown('<h2 style="color: #32CD32;">😌 Calm</h2>', unsafe_allow_html=True)
         else:
             st.markdown('<h2 style="color: #32CD32;">🤔 Unknown Emotion</h2>', unsafe_allow_html=True)
 
-    # footer
-    st.markdown("---")
+# footer
+st.markdown("---")
 st.markdown(
     """
     <style>
     .footer {
-        background-color: #f1f1f1;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f8d568;
         padding: 10px;
         text-align: center;
         font-family: 'Arial', sans-serif;
@@ -81,7 +91,7 @@ st.markdown(
     </style>
     <div class="footer">
         <p>Built with ❤️ and a dash of creativity by <span style="font-weight:bold;">zen`</span></p>
-        <p>Feel free to <a href="https://github.com/Zen">check out the source code</a>!</p>
+        <p>Feel free to view the <a href="https://github.com/zen-0wl/Speech-Recognition-avec-librosa">source code</a>!</p>
     </div>
     """, unsafe_allow_html=True
 )
